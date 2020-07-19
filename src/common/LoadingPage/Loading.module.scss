@@ -1,0 +1,22 @@
+@keyframes loadingCircle {
+  100% {
+      transform: rotate(360deg)
+  }
+}
+
+.loadingContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color:transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    font-size: 36px;
+    animation: loadingCircle 1s infinite;
+  }
+}
